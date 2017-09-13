@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ATPProject" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="workingThreads" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="SolvingAlgorithm" Type="System.String" Scope="User">
+      <Value Profile="(Default)">BFS</Value>
+    </Setting>
+    <Setting Name="Generate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Prim</Value>
+    </Setting>
+    <Setting Name="completedThreads" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

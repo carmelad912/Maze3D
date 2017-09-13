@@ -1,0 +1,23 @@
+﻿<Window x:Class="ATPProject.View.MazeName" KeyDown="MazeName_KeyDown" WindowStartupLocation="CenterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATPProject.View"
+        mc:Ignorable="d"
+        Title="MazeName" Height="150" Width="300">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/View/pic/tumblr_static_5nb690r5x0ws0cscc04ggc04k_640_v2.png" Stretch="Fill"/>
+        </Grid.Background>
+        <DockPanel>
+            <Border DockPanel.Dock="Top">
+                <StackPanel>
+                    <Label HorizontalAlignment="Center">Please enter maze name:</Label>
+                    <TextBox x:Name="Mazename" HorizontalAlignment="Center" Margin="76,0" Width="140"/>
+                    <Button x:Name="Display" Content="Display!" Margin="0,30,0,0" HorizontalAlignment="Center" Click="Display_Click"/>
+                </StackPanel>
+            </Border>
+        </DockPanel>
+    </Grid>
+</Window>

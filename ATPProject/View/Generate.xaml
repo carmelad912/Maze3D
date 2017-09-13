@@ -1,0 +1,41 @@
+﻿<Window x:Class="ATPProject.View.Generate" WindowStartupLocation="CenterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATPProject.View"
+        mc:Ignorable="d"
+        Title="Generate" Height="233" Width="300">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/View/pic/tumblr_static_5nb690r5x0ws0cscc04ggc04k_640_v2.png" Stretch="UniformToFill" Opacity="0.7"/>
+        </Grid.Background>
+        
+        <DockPanel LastChildFill="True">
+            <Border DockPanel.Dock="Bottom">
+                <TextBlock Foreground="#FFA83131" HorizontalAlignment="Center" TextWrapping="Wrap" FontFamily="Comic Sans MS" FontSize="10.667" FontWeight="Bold">Large Maze sizes (above 50x50) will take a few seconds to appear</TextBlock>
+            </Border>
+            <Border DockPanel.Dock="Left">
+                <StackPanel >
+                    <Label x:Name="mazename" Content="Maze Name:" FontWeight="Bold" Width="127" Foreground="#FFA83131" FontFamily="Comic Sans MS" />
+                    <Label x:Name="rows" Content="Number of Rows:" Margin="0,5,0,0" FontWeight="Bold" Foreground="#FFA83131" FontFamily="Comic Sans MS"/>
+                    <Label x:Name="columns" Content="Number of Columns:"  Margin="0,5,0,0" FontWeight="Bold" Foreground="#FFA83131" FontFamily="Comic Sans MS"/>
+                    <Label x:Name="floors" Content="Number of Floors:"  Margin="0,5,0,0" FontWeight="Bold" Foreground="#FFA83131" FontFamily="Comic Sans MS"/>
+                    <Button x:Name="generate" Content="Generate!" Click="generate_Click" Margin="0,20,0,0" FontWeight="Bold" Width="115"/>
+                </StackPanel>
+            </Border>
+            <Border DockPanel.Dock="Right">
+                <StackPanel>
+                    <TextBox x:Name="Tname" Width="108"  Margin="0,4,0,0"/>
+                    <TextBox x:Name="Trows" Width="108"  Margin="0,13,0,0"/>
+                    <TextBox x:Name="Tcolumns" Width="108" Margin="0,13,0,0"/>
+                    <TextBox x:Name="Tfloors" Width="108" Margin="0,13,0,0"/>
+                    <Button x:Name="cancel" Content="Cancel" Click="cancel_Click" Margin="0,28,0,0" FontWeight="Bold" Width="115"/>
+                </StackPanel>
+            </Border>
+        </DockPanel>
+
+
+    </Grid>
+</Window>
